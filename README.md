@@ -1,4 +1,4 @@
-# ShipFast — Typescript
+# Friends.in
 
 Friends.in Landing page #build-in-public
 
