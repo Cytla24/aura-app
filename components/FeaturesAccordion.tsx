@@ -25,7 +25,7 @@ const features = [
   {
     title: "community",
     description:
-      "connect with like minded people looking for new friends",
+      "Meet and connect with friendly people who share your interests.",
     type: "video",
     path: "https://d3m8mk7e1mf7xn.cloudfront.net/app/newsletter.webm",
     format: "video/webm",
@@ -48,7 +48,7 @@ const features = [
   {
     title: "events",
     description:
-      "participate in exciting, high vibrational activities ",
+      "Participate in exciting, high vibrational activities to make new friends",
     type: "image",
     path: "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80",
     alt: "A computer",
@@ -72,7 +72,7 @@ const features = [
   {
     title: "friendship cards",
     description:
-      "exchange and remember meaningful conversations",
+      "Exchange and remember meaningful conversations through our friendship cards",
     svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -93,7 +93,7 @@ const features = [
   {
     title: "volunteer opportunities",
     description:
-      "give back and meet others with similar values",
+      "Help out in your community and bond with others who care about the same causes.",
     svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -114,7 +114,7 @@ const features = [
   {
     title: "wellness",
     description:
-      "engage in health focused activities and meet new friends",
+      "Take part in health and wellness activities and find friends who value a healthy lifestyle",
     svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -135,7 +135,7 @@ const features = [
   {
     title: "nightlife",
     description:
-      "enjoy vibrant social scenes and outings",
+      "Explore exciting social events and hangouts to enjoy the city and make friendss",
     svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -258,7 +258,7 @@ const FeaturesAccordion = () => {
     >
       <div className="px-8">
         <h2 className="font-extrabold text-4xl lg:text-6xl tracking-tight mb-12 md:mb-24">
-          everything you need to find and
+          Everything you need to find and
           <span className="bg-neutral text-neutral-content px-2 md:px-4 ml-1 md:ml-1.5 leading-relaxed whitespace-nowrap">
             keep
           </span>

@@ -26,11 +26,10 @@ const Hero = () => {
           find new friends in your city
         </h1>
         <p className="text-lg opacity-80 leading-relaxed">
-          The NextJS boilerplate with all you need to build your SaaS, AI tool,
-          or any other web app. From idea to production in 5 minutes.
+          the membership you need to build lasting friendships and community in your city. from friend-less to many friends.
         </p>
         <button className="btn btn-primary btn-wide">
-          Get {config.appName}
+          Join {config.appName}
         </button>
 
         <TestimonialsAvatars priority={true} />

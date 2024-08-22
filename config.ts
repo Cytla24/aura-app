@@ -29,16 +29,15 @@ const config = {
         // A friendly description of the plan, displayed on the pricing page. Tip: explain why this plan and not others
         description: "Perfect for small projects",
         // The price you want to display, the one user will be charged on Stripe.
-        price: 99,
+        price: 15,
         // If you have an anchor price (i.e. $29) that you want to display crossed out, put it here. Otherwise, leave it empty
-        priceAnchor: 149,
+        priceAnchor: 20,
         features: [
           {
-            name: "NextJS boilerplate",
+            name: "limited 50% off tickets for you and one friend",
           },
-          { name: "User oauth" },
-          { name: "Database" },
-          { name: "Emails" },
+          { name: "access to free members only events" },
+          { name: "first dibs on volunteering oppurtunites" },
         ],
       },
       {
@@ -50,17 +49,36 @@ const config = {
         isFeatured: true,
         name: "Advanced",
         description: "You need more power",
-        price: 149,
-        priceAnchor: 299,
+        price: 30,
+        priceAnchor: 40,
         features: [
           {
-            name: "NextJS boilerplate",
+            name: "free entry to a signature event",
           },
-          { name: "User oauth" },
-          { name: "Database" },
-          { name: "Emails" },
-          { name: "1 year of updates" },
-          { name: "24/7 support" },
+          { name: "bring one friends for 50% off" },
+          { name: "access to free members only events" },
+          { name: "first dibs on volunteering oppurtunites" },
+        ],
+      },
+      {
+        priceId:
+          process.env.NODE_ENV === "development"
+            ? "price_1O5KtcAxyNprDp7iftKnrrpw"
+            : "price_456",
+        // This plan will look different on the pricing page, it will be highlighted. You can only have one plan with isFeatured: true
+        isFeatured: true,
+        name: "Advanced",
+        description: "You need more power",
+        price: 45,
+        priceAnchor: 60,
+        features: [
+          {
+            name: "unlimited free entry, to most events",
+          },
+          { name: "bring one friend for 50% off" },
+          { name: "access to sold out reserves, when available" },
+          { name: "access to friends.in beta app" },
+          { name: "first dibs on volunteering oppurtunites" },
         ],
       },
     ],

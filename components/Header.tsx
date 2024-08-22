@@ -18,8 +18,12 @@ const links: {
     label: "Pricing",
   },
   {
-    href: "/#testimonials",
-    label: "Reviews",
+    href: "/#events",
+    label: "Events",
+  },
+  {
+    href: "/#shop",
+    label: "Shop",
   },
   {
     href: "/#faq",
