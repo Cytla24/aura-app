@@ -15,11 +15,21 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Install SSH key
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build Next.js app
+        run: npm run build
+
+      - name: SSH Deploy
         uses: appleboy/ssh-action@master
         with:
-          ssh-private-key: ${{ secrets.DEPLOY_SSH_KEY }}
-
-      - name: Deploy
-        run: |
-          ssh -o StrictHostKeyChecking=no ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }} "cd /var/www/landing && git reset --hard origin/main && git pull && npm install && npm run build && pm2 restart FriendsInLanding"
+            host: ${{ secrets.DEPLOY_HOST }}
+            username: ${{ secrets.DEPLOY_USER }}
+            key: ${{ secrets.DEPLOY_SSH_KEY }}
+            script: |
+              cd /var/www/landing
+              git reset --hard origin/main && git pull
+              npm install
+              npm run build
+              pm2 restart FriendsInLanding
