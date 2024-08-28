@@ -19,14 +19,14 @@ jobs:
           node-version: '20.17.0'
 
       - name: Install dependencies
-        run: npm install
+        run: npm install & npm i sharp
 
       - name: Build Next.js app
         run: npm run build
 
       - name: Deploy via SSH
         env:
-          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+          DEPLOY_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
         run: |
           echo "$DEPLOY_KEY" | ssh-add -
           ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }} << 'EOF'
