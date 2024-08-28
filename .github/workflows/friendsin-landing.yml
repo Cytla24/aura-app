@@ -32,6 +32,7 @@ jobs:
           key: ${{ secrets.DEPLOY_SSH_KEY }}
           debug: true
           script: |
+            source ~/.bashrc
             cd /var/www/landing
             git fetch --all
             git reset --hard origin/main
