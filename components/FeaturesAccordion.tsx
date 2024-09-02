@@ -3,6 +3,9 @@
 import { useState, useRef } from "react";
 import type { JSX } from "react";
 import Image from "next/image";
+import cards from '@/app/assets/cards1.jpg';
+import community from '@/app/assets/community3.jpg';
+import events from '@/app/assets/events1.jpg';
 
 interface Feature {
   title: string;
@@ -26,9 +29,9 @@ const features = [
     title: "community",
     description:
       "Meet and connect with friendly people who share your interests.",
-    type: "video",
-    path: "https://d3m8mk7e1mf7xn.cloudfront.net/app/newsletter.webm",
-    format: "video/webm",
+    type: "image",
+    path: community,
+    format: "image/jpeg",
     svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -50,7 +53,7 @@ const features = [
     description:
       "Participate in exciting, high vibrational activities to make new friends",
     type: "image",
-    path: "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80",
+    path: events,
     alt: "A computer",
     svg: (
       <svg
@@ -73,6 +76,8 @@ const features = [
     title: "friendship cards",
     description:
       "Exchange and remember meaningful conversations through our friendship cards",
+    type: "image",
+    path: cards,
     svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
