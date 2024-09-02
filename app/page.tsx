@@ -7,6 +7,8 @@ import Pricing from "@/components/Pricing";
 import FAQ from "@/components/FAQ";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
+import Events from "@/components/Events";
+import Shop from "@/components/Shop";
 
 export default function Home() {
   return (
@@ -19,6 +21,8 @@ export default function Home() {
         <Problem />
         <FeaturesAccordion />
         <Pricing />
+        <Events />
+        <Shop />
         <FAQ />
         <CTA />
       </main>

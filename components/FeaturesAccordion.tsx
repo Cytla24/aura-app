@@ -3,7 +3,7 @@
 import { useState, useRef } from "react";
 import type { JSX } from "react";
 import Image from "next/image";
-import cards from '@/app/assets/cards1.jpg';
+import cards from '@/app/assets/cards6.jpg';
 import community from '@/app/assets/community3.jpg';
 import events from '@/app/assets/events1.jpg';
 
