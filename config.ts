@@ -25,18 +25,18 @@ const config = {
             ? "price_1PqcSZFZWJ1HvbHHKaL1usVc"
             : "price_456",
         //  REQUIRED - Name of the plan, displayed on the pricing page
-        name: "Starter",
+        name: "Beginner",
         // A friendly description of the plan, displayed on the pricing page. Tip: explain why this plan and not others
-        description: "Perfect for small projects",
+        description: "for people who want to make few friends per month",
         // The price you want to display, the one user will be charged on Stripe.
-        price: 15,
+        price: 20,
         // If you have an anchor price (i.e. $29) that you want to display crossed out, put it here. Otherwise, leave it empty
-        priceAnchor: 20,
+        priceAnchor: 25,
         features: [
           {
-            name: "limited 50% off tickets for you and one friend",
+            name: "free entry to ONE signature event",
           },
-          { name: "access to free members only events" },
+          { name: "full access to all members-only events" },
           { name: "first dibs on volunteering oppurtunites" },
         ],
       },
@@ -47,16 +47,16 @@ const config = {
             : "price_456",
         // This plan will look different on the pricing page, it will be highlighted. You can only have one plan with isFeatured: true
         isFeatured: true,
-        name: "Advanced",
-        description: "You need more power",
+        name: "Pro",
+        description: "for people who want to make a bunch of friends per month",
         price: 30,
         priceAnchor: 40,
         features: [
           {
-            name: "free entry to a signature event",
+            name: "free entry to TWO signature events",
           },
-          { name: "bring one friends for 50% off" },
-          { name: "access to free members only events" },
+          { name: "bring one friend for 50% off" },
+          { name: "full access to all members-only events" },
           { name: "first dibs on volunteering oppurtunites" },
         ],
       },
@@ -66,9 +66,8 @@ const config = {
             ? "price_1O5KtcAxyNprDp7iftKnrrpw"
             : "price_456",
         // This plan will look different on the pricing page, it will be highlighted. You can only have one plan with isFeatured: true
-        isFeatured: true,
         name: "Advanced",
-        description: "You need more power",
+        description: "for people who want to make a LOT of friends per month",
         price: 45,
         priceAnchor: 60,
         features: [
