@@ -18,12 +18,8 @@ const links: {
     label: "Pricing",
   },
   {
-    href: "/#events",
-    label: "Events",
-  },
-  {
-    href: "/#shop",
-    label: "Shop",
+    href: "/#leaderboard",
+    label: "Leaderboard",
   },
   {
     href: "/#faq",
